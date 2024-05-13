@@ -39,7 +39,7 @@ main
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap:30px;
+    gap:100px;
 }
 
 h1{
@@ -86,38 +86,19 @@ h2{
 .footer
 {   
     background-color: white;
-    box-shadow: 0 0px 7px rgba(218, 23, 218, 0.2);
+    box-shadow: 0 -3px 5px rgba(218, 23, 218, 0.7);
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-.footer-title
-{
-    text-align: center;
-    font-size: 30px;
-    color: #061f3d;
-    margin-bottom: 20px;
+    height: 40px;
 }
 
 .footer-text
 {
-    margin-top: 30px;
+    margin-top: 4px;
     font-size: 20px;
     color: #747b8f;
     text-align: center;
-}
-
-.footer-social
-{
-    display: flex;
-    justify-content: space-around; 
-    font-size: 40px; 
-}
-
-.link
-{
-    color: #061f3d; 
 }
 
 @media (max-width: 992px)
@@ -134,11 +115,6 @@ h2{
     .inicio-title h1
     {
         font-size: 14px;
-    }
-
-    .footer-title
-    {
-        font-size: 20px;
     }
 
     .boton_volver{

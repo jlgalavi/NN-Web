@@ -40,6 +40,10 @@ header
     min-height: 70vh;
 }
 
+#Equipo h2{
+    font-size: 40px;
+}
+
 .swiper-wrapper
 {
     display: flex;
@@ -442,13 +446,6 @@ hr
     margin-top: 40px;
 }
 
-.btn-tecnology-info:hover
-{
-    background-color: #6c69f9;
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
 .category-img img
 {
     width: 100px;
@@ -541,6 +538,7 @@ hr
     margin-top: 40px;
     text-decoration: none;
     border-color: #7270ec;
+    cursor:pointer;
 }
 
 .btn-add-cart:hover
@@ -581,7 +579,6 @@ hr
     justify-content: space-around;
     margin-top: 20px;  
     font-size: 40px; 
-   
 }
 
 .link
@@ -596,13 +593,13 @@ hr
 
 @media (max-width: 992px)
 {
-   .menu
-   {
+    .menu
+    {
         padding: 20px;
         box-shadow: 0 3px 5px rgba(218, 23, 218, 0.2);
-   }
+    }
 
-   .menu label
+    .menu label
     {
         display: initial;
     }
@@ -723,8 +720,8 @@ hr
 
     .Descripcion
     {
-       flex-direction: column;
-       font-size: 20px; 
+        flex-direction: column;
+        font-size: 20px; 
     }
 
     .btn-showmore
@@ -761,8 +758,8 @@ hr
 
     .category-img 
     {
-       width: 100%;
-       margin-left: 15px;
+        width: 100%;
+        margin-left: 15px;
     }
 
     .category-txt h3
@@ -773,7 +770,7 @@ hr
 
     .tecnology-description
     {
-       margin-left: 35px;
+        margin-left: 35px;
     } 
 
     .products
@@ -785,6 +782,33 @@ hr
     {
         font-size: 40px;
         margin-bottom: 40px;
+    }
+
+    .btn-add-cart
+    {
+        list-style: none;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0);
+        color: #ffffff;
+        font-size: 16px;
+        padding: 10px 25px;
+        border-radius: 25px;
+        margin-top: 40px;
+        text-decoration: none;
+        border-color: #7270ec;
+    }
+
+    .btn-add-cart:active
+    {   
+        background-color: #7270ec;
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    .btn-add-cart:hover
+    {
+        transform: scale(1);
+        background-color: #061f3d;
     }
 
     .footer

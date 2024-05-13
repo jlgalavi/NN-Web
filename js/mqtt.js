@@ -1,9 +1,9 @@
 const url = "wss://broker.emqx.io:8084/mqtt"
 var client = mqtt.connect(url);
 
-const carritoElement = document.getElementById('carrito-compra');
+const carritoElement = document.getElementById("confirmar-compra");
 
-function PublicarPedido(){
+async function PublicarPedido() {
     client.on('connect', function () {
         carritoElement.addEventListener('click',() => {
             const productos = JSON.parse(localStorage.getItem("products"));
@@ -35,8 +35,14 @@ function PublicarPedido(){
     });
 }
 
-PublicarPedido();
+async function ejecutarFunciones() {
+    await PublicarPedido();
+    carritoElement.addEventListener('click', () => {
+        setTimeout(VaciarCarrito, 2000);
+    });
+}
 
+ejecutarFunciones();
 
 
 

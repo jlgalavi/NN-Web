@@ -33,27 +33,35 @@
 
     <main>
         <div id="loading-overlay" class="loading-overlay">
-        <div class="elementos">
-            <div id="todo">
-                <section id="productos-container">
-                </section>
-                <div id="botonesytotales">
-                    <section id="totales">
-                        <p><strong>Total de cajas:</strong> <span id="total-unidades"><strong>0</strong></span></p>
-                        <p><strong>Precio: </strong><span id="precio-unidades"><strong>0</strong></span>€</p>
+        <div id="opacidad">
+            <div class="elementos">
+                <div id="todo">
+                    <section id="productos-container">
                     </section>
-                    <section id="botones">
-                        <button id="vaciar-carrito">Vaciar carrito</button>
-                        <button id="carrito-compra">Comprar</button>
-                        <a href="index.html"><button>Volver al menú</button></a>
-                    </section>
+                    <div id="botonesytotales">
+                        <section id="totales">
+                            <p><strong>Total de cajas:</strong> <span id="total-unidades"><strong>0</strong></span></p>
+                            <p><strong>Precio: </strong><span id="precio-unidades"><strong>0</strong></span>€</p>
+                        </section>
+                        <section id="botones">
+                            <button id="vaciar-carrito">Vaciar carrito</button>
+                            <button id="carrito-compra">Comprar</button>
+                            <a href="index.html"><button>Volver al menú</button></a>
+                        </section>
+                    </div>
+                    <div class="mensaje-carrito-vacio">
+                        <p id="carrito-vacio">El carrito está vacío</p>
+                        <a href="index.html#products-list"><button id="hacer-pedido">Hacer pedido</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="mensaje-carrito-vacio">
-                <p id="carrito-vacio">El carrito está vacío</p>
-                <a href="index.html#products-list"><button id="hacer-pedido">Hacer pedido</button></a>
-            </div>
         </div>
+                <div id="mensaje-compra">
+                    <p>¿Estás seguro que quieres continuar con la compra?</p>
+                    <button id="confirmar-compra">Confirmar</button>
+                    <button id="cancelar-compra">Cancelar</button>
+                </div>
+            </div>
         </div>
         <div id="loading-animation"></div>
     </main>
