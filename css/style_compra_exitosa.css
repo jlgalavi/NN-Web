@@ -68,7 +68,6 @@ h2{
     background-color: #7270ec;
     margin-left: 35px;
     margin-right:35px;
-    margin-top:50px;
     border-radius: 10px;
     cursor: pointer;
     border:none;
@@ -90,7 +89,7 @@ h2{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    height: 70px;
 }
 
 .footer-text

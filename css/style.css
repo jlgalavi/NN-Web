@@ -38,10 +38,12 @@ header
     display: flex;
     align-items: center;
     min-height: 70vh;
+    height: 700px;
 }
 
-#Equipo h2{
+.Nosotros h2{
     font-size: 40px;
+    margin-top:0px;
 }
 
 .swiper-wrapper
@@ -86,6 +88,11 @@ header
 .swiper-pagination-bullet-active
 {
     background-color: #d2d2d2;
+}
+
+#products-list{
+    padding: 0;
+    height: 650px;
 }
 
 .menu
@@ -391,10 +398,9 @@ hr
 
 .tecnologies
 {
-    padding: 50px 0;
+    padding: 30px;
     text-align: center;
     background-color: white;
-
 }
 
 .tecnologies h2
@@ -433,17 +439,6 @@ hr
 {
     color: #0d0d31;
 
-}
-
-.btn-tecnology-info
-{
-    display: inline-block;
-    background-color: #7270ec;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 10px 25px;
-    border-radius: 25px;
-    margin-top: 40px;
 }
 
 .category-img img
@@ -615,6 +610,7 @@ hr
         text-align: center;
         border-radius: 10px;
         opacity:0.95;
+        transition: opacity 0.5s ease-in-out;
     }
 
     .menu .navbar ul li
@@ -679,6 +675,10 @@ hr
         margin: 300px 40px 0 40px;
     }
 
+    header{
+        height: 800px;
+    }
+
     .header-info
     {   
         padding: 0;
@@ -706,7 +706,7 @@ hr
     {
         width: 280px;
         border-radius: 50%;
-    }
+    }  
 
     .proyecto-text
     {   
@@ -773,6 +773,16 @@ hr
         margin-left: 35px;
     } 
 
+    .Nosotros
+    {
+        height: 820px;
+    }
+
+    .Nosotros h2{
+        font-size: 30px;
+        margin-top:0px;
+    }
+
     .products
     {
         padding: 30px;
@@ -836,6 +846,16 @@ hr
     .inicio-title h1
     {
         font-size: 14px;
+    }
+    .footer-title h3{
+        font-size: 25px;
+    }
+    .footer-social
+    {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;  
+        font-size: 30px; 
     }
 }
 

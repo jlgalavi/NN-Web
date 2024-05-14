@@ -127,8 +127,7 @@ header{
 }
 
 #botonesytotales{
-    margin-top: 300px;
-    position:fixed;
+    margin-top: 50px;
     bottom:50px;
     width: 100%;
 }
@@ -212,6 +211,8 @@ header{
     top: 35%; /* Centra el elemento verticalmente */
     left: 50%; /* Centra el elemento horizontalmente */
     transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 #confirmar-compra{
@@ -247,13 +248,13 @@ header{
     transition: 0.3s;
 }
 
-.footer
+footer
 {   
     background-color: white;
     box-shadow: 0 -3px 5px rgba(218, 23, 218, 0.7);
-    position: absolute;
     bottom: 0;
     width: 100%;
+    position: absolute;
 }
 
 .footer-text
@@ -306,5 +307,30 @@ header{
     .tarjeta-producto img{
         height: 80px;
         margin-right: 0;
+    }
+}
+
+@media (max-width: 550px){
+    .tarjeta-producto{
+        gap:25px;
+        width: 400px;
+    }
+    .tarjeta-producto img{
+        height: 60px;
+        margin-left: 0px;
+    }
+    .tarjeta-producto h3{
+        width: 120px;
+    }
+    .tarjeta-producto p{
+        text-align: center;
+        width: 170px;
+    }
+    .buttons{
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        margin-left:0px;
+        margin-right:10px;
     }
 }

@@ -89,3 +89,38 @@ function showProductsList(productos) {
 
 showProductsList(products);
 
+function hideNavBar(){
+    const navListItems = document.querySelectorAll(".navbar li");
+    const navBar = document.querySelector(".navbar");
+
+    navListItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            navBar.style.opacity = "0";
+            setTimeout(() => {
+                navBar.style.display = "none";
+            }, 500); // Asegúrate de que este tiempo coincida con la duración de la transición en tu CSS
+        });
+    });
+}
+
+function showNavBar(){
+    const navBar = document.querySelector(".navbar");
+    const menuIcon = document.querySelector("#menu");
+        menuIcon.addEventListener('click', () => {
+            if(navBar.style.display === "flex"){
+                navBar.style.opacity = "0";
+                setTimeout(() => {
+                    navBar.style.display = "none";
+                }, 500); // Asegúrate de que este tiempo coincida con la duración de la transición en tu CSS
+                return;
+            }
+            else{
+                navBar.style.display = "flex";
+                setTimeout(() => {
+                    navBar.style.opacity = "0.9";
+                }, 100); // Asegúrate de que este tiempo coincida con la duración de la transición en tu CSS
+            }
+        });
+}
+showNavBar();
+hideNavBar();

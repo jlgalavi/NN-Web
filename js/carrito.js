@@ -106,6 +106,9 @@ function mensajeCompra(){
     const opacidad = document.getElementById('opacidad');
     carritoCompraElement.addEventListener('click', () => {
         mensajeCompra.style.display = 'block';
+        setTimeout(() => {
+            mensajeCompra.style.opacity = '1';
+        },100);
         opacidad.style.opacity = '0.1';
     });
 }
@@ -114,8 +117,13 @@ function cancelarCompra(){
     const mensajeCancelarCompra = document.getElementById("cancelar-compra");
     const mensajeCompra = document.getElementById('mensaje-compra');
     mensajeCancelarCompra.addEventListener('click', () => {
-        mensajeCompra.style.display = 'none';
-        opacidad.style.opacity = '1';
+        mensajeCompra.style.opacity = '0';
+        setTimeout(() => {
+            mensajeCompra.style.display = 'none'; 
+        }, 500);
+        setTimeout(() => {
+            opacidad.style.opacity = '1';
+        }, 200);
     });
 }
 
