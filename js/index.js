@@ -84,7 +84,6 @@ function showProductsList(productos) {
             `
         containerProducts.appendChild(newProduct);
         newProduct.getElementsByTagName("button")[0].addEventListener('click', () => addCart(producto)) });
-   
 }
 
 showProductsList(products);
@@ -98,7 +97,7 @@ function hideNavBar(){
             navBar.style.opacity = "0";
             setTimeout(() => {
                 navBar.style.display = "none";
-            }, 500); // Asegúrate de que este tiempo coincida con la duración de la transición en tu CSS
+            }, 500); 
         });
     });
 }
@@ -107,18 +106,18 @@ function showNavBar(){
     const navBar = document.querySelector(".navbar");
     const menuIcon = document.querySelector("#menu");
         menuIcon.addEventListener('click', () => {
-            if(navBar.style.display === "flex"){
+            if(navBar.style.display === "block"){
                 navBar.style.opacity = "0";
                 setTimeout(() => {
                     navBar.style.display = "none";
-                }, 500); // Asegúrate de que este tiempo coincida con la duración de la transición en tu CSS
+                }, 500); 
                 return;
             }
             else{
-                navBar.style.display = "flex";
+                navBar.style.display = "block";
                 setTimeout(() => {
                     navBar.style.opacity = "0.9";
-                }, 100); // Asegúrate de que este tiempo coincida con la duración de la transición en tu CSS
+                }, 100); 
             }
         });
 }

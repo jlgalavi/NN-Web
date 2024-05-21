@@ -484,7 +484,7 @@ hr
 .products p
 {
     font-size: 20px;
-    color: #747b8f;
+    color: #b0b3bc;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -509,7 +509,7 @@ hr
 
 .product-txt p
 {
-    color: #747b8f;
+    color: #b0b3bc;
     font-size: 16px;
     margin-bottom: 15px;
 }
@@ -561,10 +561,9 @@ hr
 
 .footer-text
 {
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 20px;
     color: #747b8f;
-    gap: 20px;
     text-align: center;
 }
 
@@ -573,7 +572,12 @@ hr
     display: flex;
     justify-content: space-around;
     margin-top: 20px;  
-    font-size: 40px; 
+    font-size: 40px;
+    cursor:pointer; 
+}
+
+.footer-social i:hover{
+    color: #7270ec;
 }
 
 .link
@@ -607,46 +611,23 @@ hr
         left: 5px;
         right: 5px;
         background-color: #083167;
-        text-align: center;
         border-radius: 10px;
         opacity:0.95;
         transition: opacity 0.5s ease-in-out;
+        width: 100%;
     }
 
     .menu .navbar ul li
-    {
+    {   
+        display:block;
         width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 
     #menu:checked ~ .navbar
     {
         display: initial;
-    }
-
-    .cart-menu:hover #cart
-    {   
-        display: block;
-        position: absolute;
-        right: 0;
-        backdrop-filter: blur(10px);
-        top: 100%;
-        z-index: 1;
-        background-color: #4e4b5076;
-        padding: 20px;
-        min-width: 400px;
-    }
-
-    .cart-menu:active #cart
-    {   
-        display: block;
-        position: absolute;
-        right: 0;
-        backdrop-filter: blur(10px);
-        top: 100%;
-        z-index: 1;
-        background-color: #4e4b5076;
-        padding: 20px;
-        min-width: 400px;
     }
 
     .logo
@@ -829,6 +810,10 @@ hr
         padding: 20px;
     }
 
+    .footer-text{
+        margin-top: 10px;
+    }
+
     .link
     {
         width: 100%;
@@ -843,19 +828,27 @@ hr
 
 @media (max-width: 600px)
 {
-    .inicio-title h1
-    {
-        font-size: 14px;
+    .inicio-title
+    {   
+        margin-top: 400px;
+    }
+    .inicio-title h1{
+        font-size:15px;
     }
     .footer-title h3{
         font-size: 25px;
+        margin-bottom:5px;
     }
     .footer-social
     {
         display: flex;
-        justify-content: space-around;
-        margin-top: 15px;  
+        justify-content: space-around; 
         font-size: 30px; 
+    }
+    .footer-text
+    {
+        margin-top: 10px;
+        font-size: 17px;
     }
 }
 
