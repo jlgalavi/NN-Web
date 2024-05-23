@@ -14,7 +14,6 @@ async function PublicarPedido() {
                 delete productos[i].size;
             }
             if(productos && productos.length > 0){
-                console.log(productos);
                 client.subscribe('giirob/pr2/B1/infopedido', function (err) {
                     if (!err) {
                         client.publish('giirob/pr2/B1/infopedido', JSON.stringify(productos), function(err) {

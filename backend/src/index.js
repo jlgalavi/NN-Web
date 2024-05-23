@@ -27,12 +27,12 @@ app.get("/envios", async (req, res) => {
 
 app.post("/pedido", async (req, res) => {
     if(req.body && req.body.length > 0){
-        //console.log(req.body);
         let TotalPrice = 0;
         req.body.forEach(producto => {
             console.log(producto);
         });
         console.log(TotalPrice);
+        console.log("Pedido recibido");
         return res.sendStatus(200);
     }
     res.sendStatus(400);

@@ -123,13 +123,17 @@ header
     cursor: pointer;
 }
 
-.menu .navbar ul li
+.menu .navbar{
+    display:none;
+}
+
+.menu .navbarpc ul li
 {
     position: relative;
     float: left;
 }
 
-.menu .navbar ul li a
+.menu .navbarpc ul li a
 {
     font-size: 18px;
     padding: 20px;
@@ -137,7 +141,7 @@ header
     display: block;
 }
 
-.menu .navbar ul li a:hover
+.menu .navbarpc ul li a:hover
 {
     color: #d5d5d5;
 }
@@ -598,9 +602,13 @@ hr
         box-shadow: 0 3px 5px rgba(218, 23, 218, 0.2);
     }
 
-    .menu label
+    .menu label 
     {
         display: initial;
+    }
+
+    .menu .navbarpc{
+        display: none;
     }
 
     .menu .navbar
@@ -625,9 +633,16 @@ hr
         justify-content: center;
     }
 
+    .navbar a{
+        padding: 20px;
+        display: block;
+        color: #ffffff;
+        font-size: 17px;
+    }
+
     #menu:checked ~ .navbar
     {
-        display: initial;
+        display: flex;
     }
 
     .logo
