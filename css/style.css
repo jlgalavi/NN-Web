@@ -314,6 +314,8 @@ th, td
     background-color: rgba(228, 228, 228, 0.756);
     border-radius: 20px;
     padding: 20px;
+    display:flex;
+    align-items: center;
 }
 
 .header-content
