@@ -18,12 +18,12 @@ async function PublicarPedido() {
                     if (!err) {
                         client.publish('giirob/pr2/B1/infopedido', JSON.stringify(productos), function(err) {
                             if(err) {
-                                console.log("Error al publicar el mensaje", err);
+                                window.location.href = "fallo_conexion.html";
                             }
                         });
                     } 
                     else{
-                        console.log("Error al suscribirse al topic", err);
+                        window.location.href = "fallo_conexion.html";                    
                     }
                 });
             }

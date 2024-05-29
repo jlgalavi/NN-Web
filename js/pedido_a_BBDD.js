@@ -1,29 +1,20 @@
-//POST PEDIDO
-const itemConfirmarCompra = document.getElementById('confirmar-compra');
-const productos = JSON.parse(localStorage.getItem('productos'));
-console.log(productos);
-function postPedido(){
-
-    itemConfirmarCompra.addEventListener('click', async () => {
-        try{
-            const res = await fetch('http://localhost:5501/pedido', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(productos),
-            });
-    
-            if(!res.ok) {
-                throw new Error(`HTTP error! status: ${res.status}`);
-            }
+document. getElementById("confirmar-compra").addEventListener("click", async ()=> {
+    const carrito = JSON.parse(localStorage.getItem("products"));
+    if(carrito && carrito.length > 0){
+        const res = await fetch("https://nn-almacenes-inteligentes.netlify.app/carrito/comprar",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(carrito)
+        });
+        if(res.ok){
+            console.log("Compra realizada");
         }
-        catch (err) {
-            console.log("Ha ocurrido un error en la solicitud:", err.message);
+        else{
+            window.location.href = "fallo_conexion.html";
         }
-    });
-}
-
-postPedido();
+    }
+});
 
 

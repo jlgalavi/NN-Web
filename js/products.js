@@ -28,5 +28,3 @@ const products = [
         size: '25 x 30 x 21'
     }
 ];
-
-// const rowProducts = document.getElementById('row-products');
