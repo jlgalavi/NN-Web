@@ -12,7 +12,7 @@ document. getElementById("confirmar-compra").addEventListener("click", async ()=
             console.log("Compra realizada");
         }
         else{
-            window.location.href = "fallo_conexion.html";
+            //window.location.href = "fallo_conexion.html";
         }
     }
 });
