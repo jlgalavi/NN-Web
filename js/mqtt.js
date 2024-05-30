@@ -1,4 +1,4 @@
-const url = "wss://broker.emqx.io:8084/mqtt"
+const url = "wss://broker.hivemq.com:8884/mqtt"
 var client = mqtt.connect(url);
 
 const carritoElement = document.getElementById("confirmar-compra");
